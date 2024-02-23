@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/viewCustom"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="DAYS EASY" />
+
+    <EditText
+        android:id="@+id/etmail"
+        style="@style/viewCustom"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/viewCustom"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:text="Password" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/viewCustom"
+        android:background="@color/cardview_shadow_start_color"
+        android:onClick="login"
+        android:text="@string/login"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/create"
+        style="@style/viewCustom"
+        android:layout_height="65dp"
+        android:background="@color/cardview_light_background"
+        android:onClick="register"
+        android:text="Crear cuenta"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        style="@style/viewCustom"
+        android:layout_below="@+id/btnLogin"
+        android:layout_gravity="center"
+        android:minHeight="48dp"
+        android:onClick="forgotPassword"
+        android:text="@string/forgotPassword"
+        android:textSize="15sp"
+        tools:text="Olvidar contraseña?¿" />
+
+
+</LinearLayout>

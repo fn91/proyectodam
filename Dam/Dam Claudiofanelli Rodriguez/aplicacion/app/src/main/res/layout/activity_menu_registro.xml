@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuRegistro">
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/Apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Apellidos" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:text="pasword" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="date" />
+
+    <Button
+        android:id="@+id/Registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:onClick="register"
+        android:text="Registro"
+        android:textColor="#039BE5"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/volverLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:text="VolverAtras"
+        android:textColor="#039BE5"
+        android:textStyle="bold" />
+</LinearLayout>
+

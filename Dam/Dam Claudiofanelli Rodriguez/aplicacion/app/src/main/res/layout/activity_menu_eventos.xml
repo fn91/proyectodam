@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuEventos">
+
+
+    <TextView
+        android:id="@+id/t7menueven"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="23dp"
+        android:background="#81D4FA"
+        android:text="Menu Eventos"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/t10nue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/t10nue"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="35dp"
+        android:background="#81D4FA"
+        android:text="nuevo evento"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnsubir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnsubir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="208dp"
+        android:text="Subir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t10nue" />
+
+    <Button
+        android:id="@+id/btndescargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="446dp"
+        android:text="Descargar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsubir" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="440dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndescargar"
+        app:srcCompat="@drawable/descarga" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

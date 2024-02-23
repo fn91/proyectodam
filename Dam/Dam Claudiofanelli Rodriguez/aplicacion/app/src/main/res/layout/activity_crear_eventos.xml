@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".CrearEventos">
+
+    <Button
+        android:id="@+id/btnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mevento"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C5E1A5"
+        android:text="editar Eventos"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnext"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btndocu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="16dp"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Eventos"
+        android:layout_width="187dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="54dp"
+        android:text="Eventos"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etevento1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Nombre Evento"
+        app:helperText="Camporequerido"
+        app:layout_constraintBottom_toTopOf="@+id/etdia2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etdia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Dia"
+        app:helperText="Camporequerido"
+        app:layout_constraintBottom_toTopOf="@+id/etnya2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etnya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Nombre y Apellidos"
+        app:helperText="Camporequerido"
+        app:layout_constraintBottom_toTopOf="@+id/etpersonas"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etpersonas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="NºPersonas"
+        app:helperText="Camporequerido"
+        app:layout_constraintBottom_toTopOf="@+id/etFecha2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etFecha2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:helperText="Camporequerido"
+        app:layout_constraintBottom_toTopOf="@+id/et6ubicacion"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Fecha" />
+
+    <EditText
+        android:id="@+id/et6ubicacion"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="ubicacion"
+        app:helperText="Camporequerido"
+        app:layout_constraintBottom_toTopOf="@+id/mevento"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

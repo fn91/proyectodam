@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuDocumentos">
+
+    <TextView
+        android:id="@+id/t9.documen"
+        android:layout_width="167dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="40dp"
+        android:background="#C5E1A5"
+        android:text="Menu Documentos"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/t14nuedocu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/t14nuedocu"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="76dp"
+        android:background="#C5E1A5"
+        android:text="nuevo documento"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bntsudocume2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bntsudocume2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="228dp"
+        android:text="Subir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t14nuedocu" />
+
+    <Button
+        android:id="@+id/btndescadocu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="448dp"
+        android:text="Descargar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="436dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/documentos" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
